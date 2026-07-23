@@ -1,0 +1,830 @@
+[
+  {
+    "ref": "MAIN-vocabulary#1",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#2",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#3",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#4",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      2,
+      1
+    ],
+    "rewrittenLetters": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#5",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#6",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#7",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#8",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#9",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#10",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#11",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#12",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#13",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#14",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#15",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#16",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#17",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#18",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      4,
+      1
+    ],
+    "rewrittenLetters": [
+      "E",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#19",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#20",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#21",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#22",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#23",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      4,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "E",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#24",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#25",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#26",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#27",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#28",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#29",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#30",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#31",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#32",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#33",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#34",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#35",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      1
+    ],
+    "rewrittenLetters": [
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#36",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#37",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#38",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#39",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#40",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#41",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#42",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#43",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#44",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#45",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#46",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      1,
+      0
+    ],
+    "rewrittenLetters": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#47",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#48",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#49",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#50",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1
+    ],
+    "rewrittenLetters": [
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#51",
+    "correctLetter": "E",
+    "correctIndex": 4,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#52",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#53",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3
+    ],
+    "rewrittenLetters": [
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#54",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#55",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      3,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#56",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3
+    ],
+    "rewrittenLetters": [
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#57",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#58",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#59",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#60",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#61",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#62",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      3
+    ],
+    "rewrittenLetters": [
+      "D"
+    ]
+  }
+]

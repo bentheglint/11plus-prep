@@ -1,0 +1,407 @@
+[
+  {
+    "ref": "MAIN-wordClassGrammar#2",
+    "passage": null,
+    "question": "Which of the following sentences contains personification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "She glided through the pool as smoothly as a darting silver fish."
+      },
+      {
+        "letter": "B",
+        "text": "The overgrown back garden was a lush green paradise of tangled colour."
+      },
+      {
+        "letter": "C",
+        "text": "The alarm clock screamed at me to wake up."
+      },
+      {
+        "letter": "D",
+        "text": "He was as tall as a giraffe."
+      },
+      {
+        "letter": "E",
+        "text": "I was so embarrassed that I very nearly died of shame on the spot."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#3",
+    "passage": null,
+    "question": "What is a clause?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A group of words that contains a subject and a verb"
+      },
+      {
+        "letter": "B",
+        "text": "A group of words without a verb"
+      },
+      {
+        "letter": "C",
+        "text": "Another name for a sentence"
+      },
+      {
+        "letter": "D",
+        "text": "A single word that names a person, a place, an object, or a feeling."
+      },
+      {
+        "letter": "E",
+        "text": "A punctuation mark you place at the end of a sentence to close it."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#4",
+    "passage": null,
+    "question": "What is a phrase?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A complete sentence that expresses a whole idea and can stand entirely on its own."
+      },
+      {
+        "letter": "B",
+        "text": "A group of words without a subject-verb pair that forms part of a sentence"
+      },
+      {
+        "letter": "C",
+        "text": "A group of words with a subject and verb"
+      },
+      {
+        "letter": "D",
+        "text": "A literary device, such as a simile or metaphor, that a writer uses to create imagery."
+      },
+      {
+        "letter": "E",
+        "text": "Simply another word for a clause, since both must always contain a subject and a matching main verb."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#5",
+    "passage": null,
+    "question": "What is a contraction?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An unusually long and complicated word that is difficult to spell correctly."
+      },
+      {
+        "letter": "B",
+        "text": "A describing word that tells you more about a noun in a sentence."
+      },
+      {
+        "letter": "C",
+        "text": "A shortened form of two words using an apostrophe"
+      },
+      {
+        "letter": "D",
+        "text": "A word at the end of a sentence"
+      },
+      {
+        "letter": "E",
+        "text": "A word that joins two sentences"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#6",
+    "passage": null,
+    "question": "What is an ellipsis (...) often used for in creative writing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To bring a sentence to a normal, complete stop like any full stop."
+      },
+      {
+        "letter": "B",
+        "text": "To show someone is shouting"
+      },
+      {
+        "letter": "C",
+        "text": "To create suspense or show a trailing thought"
+      },
+      {
+        "letter": "D",
+        "text": "To introduce a list of items before you name each one."
+      },
+      {
+        "letter": "E",
+        "text": "To show that something belongs to a particular person or thing."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#7",
+    "passage": null,
+    "question": "What is the purpose of speech marks (inverted commas) in writing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To join two shorter sentences into one longer sentence."
+      },
+      {
+        "letter": "B",
+        "text": "To add strong emphasis to an important word or idea."
+      },
+      {
+        "letter": "C",
+        "text": "To show the exact words someone said"
+      },
+      {
+        "letter": "D",
+        "text": "To introduce a list"
+      },
+      {
+        "letter": "E",
+        "text": "To show a pause"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#8",
+    "passage": null,
+    "question": "'She was exhausted; she had been running for hours.' Why is a semi-colon used here?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To introduce a list"
+      },
+      {
+        "letter": "B",
+        "text": "To mark the exact words that a person speaks aloud."
+      },
+      {
+        "letter": "C",
+        "text": "To join two closely related complete sentences"
+      },
+      {
+        "letter": "D",
+        "text": "To show that something belongs to a named person or object."
+      },
+      {
+        "letter": "E",
+        "text": "To build suspense by letting a sentence trail off into silence."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#9",
+    "passage": null,
+    "question": "What is onomatopoeia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A word that sounds like the noise it describes"
+      },
+      {
+        "letter": "B",
+        "text": "A comparison using 'like' or 'as'"
+      },
+      {
+        "letter": "C",
+        "text": "Giving human feelings to objects"
+      },
+      {
+        "letter": "D",
+        "text": "Repeating the same word several times to create a strong effect."
+      },
+      {
+        "letter": "E",
+        "text": "A wild overstatement that stretches the truth far beyond what is real."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#10",
+    "passage": null,
+    "question": "What is personification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Comparing two different things using the words 'like' or 'as'."
+      },
+      {
+        "letter": "B",
+        "text": "Giving human qualities or actions to non-human things"
+      },
+      {
+        "letter": "C",
+        "text": "Repeating sounds at the start of words"
+      },
+      {
+        "letter": "D",
+        "text": "Saying that one thing actually is another, without using 'like'."
+      },
+      {
+        "letter": "E",
+        "text": "An over-the-top exaggeration used purely for dramatic effect and comic emphasis."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#11",
+    "passage": null,
+    "question": "What is hyperbole?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A comparison between two things using the linking word 'as'."
+      },
+      {
+        "letter": "B",
+        "text": "A word that imitates a sound"
+      },
+      {
+        "letter": "C",
+        "text": "A deliberate exaggeration not meant to be taken literally"
+      },
+      {
+        "letter": "D",
+        "text": "Giving human feelings and human actions to lifeless objects or animals."
+      },
+      {
+        "letter": "E",
+        "text": "Repeating the same word for emphasis"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#12",
+    "passage": null,
+    "question": "In 'She works hard' and 'She hardly works', do 'hard' and 'hardly' mean the same thing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes — both words mean exactly the same, so the two sentences say the same thing."
+      },
+      {
+        "letter": "B",
+        "text": "No — 'hard' means with great effort; 'hardly' means almost not at all"
+      },
+      {
+        "letter": "C",
+        "text": "Yes — 'hardly' is simply a more formal or polite way of saying the very same thing."
+      },
+      {
+        "letter": "D",
+        "text": "No — 'hard' is an adjective; 'hardly' is a noun"
+      },
+      {
+        "letter": "E",
+        "text": "'Hardly' is not a proper word at all, so only the first sentence makes real sense."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#14",
+    "passage": null,
+    "question": "Which sentence has TWO clauses?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The tall boy ran quickly."
+      },
+      {
+        "letter": "B",
+        "text": "I went home because I felt ill."
+      },
+      {
+        "letter": "C",
+        "text": "She quickly ate her entire packed lunch in the busy playground."
+      },
+      {
+        "letter": "D",
+        "text": "Please open the heavy wooden door very quietly now."
+      },
+      {
+        "letter": "E",
+        "text": "The beautiful summer garden bloomed with bright red and yellow flowers."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#15",
+    "passage": null,
+    "question": "What is the difference between a main clause and a subordinate clause?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Main clauses are always longer than the subordinate clauses beside them."
+      },
+      {
+        "letter": "B",
+        "text": "Main clauses make sense alone; subordinate clauses don't"
+      },
+      {
+        "letter": "C",
+        "text": "Subordinate clauses always come first"
+      },
+      {
+        "letter": "D",
+        "text": "Main clauses have adjectives; subordinate clauses don't"
+      },
+      {
+        "letter": "E",
+        "text": "There is really no difference; the two terms mean the same thing."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#17",
+    "passage": null,
+    "question": "Why is 'the' classified as a determiner rather than an adjective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because it describes what the noun is actually like, like an adjective."
+      },
+      {
+        "letter": "B",
+        "text": "Because it replaces a noun completely, working just like a pronoun does."
+      },
+      {
+        "letter": "C",
+        "text": "Because it identifies which noun, not what it's like"
+      },
+      {
+        "letter": "D",
+        "text": "Because it comes after the noun"
+      },
+      {
+        "letter": "E",
+        "text": "Because it shows an action"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#18",
+    "passage": null,
+    "question": "In 'The record was broken yesterday', is 'broken' a verb or adjective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Verb — it's the past participle of 'break'"
+      },
+      {
+        "letter": "B",
+        "text": "Adjective — it simply describes what the record is like, nothing more."
+      },
+      {
+        "letter": "C",
+        "text": "Both interpretations are valid depending on reading"
+      },
+      {
+        "letter": "D",
+        "text": "Noun — it names the thing that got damaged here."
+      },
+      {
+        "letter": "E",
+        "text": "Adverb — it tells you how the verb 'was' happened here."
+      }
+    ]
+  }
+]

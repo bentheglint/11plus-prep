@@ -1,0 +1,213 @@
+[
+  {
+    "ref": "MAIN-wordClassGrammar#2",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#3",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#4",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#5",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#6",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4,
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#7",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      0
+    ],
+    "rewrittenLetters": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#8",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#9",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#10",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#11",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#12",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#14",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      2,
+      4
+    ],
+    "rewrittenLetters": [
+      "D",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#15",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#17",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#18",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      3,
+      4,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "B"
+    ]
+  }
+]

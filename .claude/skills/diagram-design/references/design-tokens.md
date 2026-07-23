@@ -3,6 +3,58 @@
 Single source of truth for all SVG diagram styling in the 11+ app.
 Every diagram MUST reference these tokens.
 
+> ## ⚠️ CORRECTED 23 Jul 2026 — READ THIS FIRST
+>
+> The blue palette below (`#3b82f6`, `#93c5fd`, `#bfdbfe`, `#6366f1` as
+> "labelColour", `#dc2626` for unknowns) was **wrong**, and it caused two new
+> components to be built in a style foreign to the app before Ben caught it.
+>
+> Two things were wrong with it:
+>
+> 1. **It contradicted `SKILL.md`.** That file's own Colour Consolidation Map
+>    lists `#3b82f6`, `#93c5fd` and `#bfdbfe` as colours to REPLACE. Following
+>    this file therefore meant violating the skill.
+> 2. **It didn't match the app.** `#7C3AED` appears 932 times in `src/`,
+>    `#EDE8FF` 123, `#A29BFE` 109. The app is purple. Diagrams built blue look
+>    like they belong to a different product.
+>
+> Note `SKILL.md`'s stated targets are ALSO not reality: `#6C5CE7`, `#2D3436`,
+> `#636E72` and `#00B894` appear **zero** times in `src/`. They were proposed
+> and never adopted.
+>
+> ### The actual rule
+>
+> **`AngleDiagram` is the reference. Match it.** When any guidance conflicts,
+> the reference component wins — it is what the app really looks like.
+>
+> | Role | Value | Where |
+> |---|---|---|
+> | In-SVG primary (outlines, axes, structural lines) | `#6366f1` | shape strokes |
+> | Shape fill | `#f0f0ff` | soft lavender, one fill per figure |
+> | Element accents (tie a label to the thing it names) | `#818cf8`, `#38bdf8`, `#34d399` | labels + their element |
+> | Unknown / withheld value | `#9ca3af` with "?" | NOT red — red reads as "wrong" |
+> | Secondary text (ticks, captions) | `#64748b` | |
+> | Grid / hairlines | `#E5E7EB` | |
+> | Surface | `#FAFBFF` | |
+> | Body text | `#1e293b` | |
+> | Caption BELOW the figure (HTML, not SVG) | `#7C3AED` | `totalLabel` convention |
+>
+> ### The feel, not just the palette
+>
+> - **One** soft fill per figure. Distinguish elements by STROKE colour, never
+>   by different fills — mixed fills go muddy where they overlap.
+> - A label takes the colour of the element it describes.
+> - Generous padding, sized so labels can sit OUTSIDE a shape with room.
+> - If a label can't sit clear, move it out and draw a **leader line**
+>   (dashed `3,2`, opacity `0.6`, in the element's colour).
+> - Supplementary text goes BELOW the SVG as HTML — never inside the figure.
+> - No titles inside the diagram; the question text supplies the context.
+>
+> Verify with `scripts/validation/diagram-qa-probe.js`, which checks text-on-
+> shape collisions (not just text-on-text), viewBox escapes, minimum sizes and
+> palette conformance. Text-on-text alone is NOT sufficient — that check passed
+> a Venn whose captions sat directly on the circle outlines.
+
 **Derived from:** the React visual components (RectangleDiagram,
 AngleDiagram, PieChart, TwoWayTable) which render the diagrams
 that Ben has approved as looking "fresh, bright and engaging".

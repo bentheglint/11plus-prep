@@ -1,0 +1,312 @@
+[
+  {
+    "ref": "MOCK-vocabulary#1",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#2",
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "rewrittenIndices": [
+      1,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#3",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      2,
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "C",
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#4",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#5",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#6",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#7",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#8",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#9",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#10",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4
+    ],
+    "rewrittenLetters": [
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#11",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#12",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#13",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#14",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#15",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#16",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#17",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#18",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#19",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      4,
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#20",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#21",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#22",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  }
+]

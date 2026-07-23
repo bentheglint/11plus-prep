@@ -1,0 +1,935 @@
+[
+  {
+    "ref": "MOCK-comprehension#1",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      3,
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "C",
+      "D",
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#2",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#3",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#4",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#5",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#6",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#7",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#8",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#9",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      3,
+      0,
+      4
+    ],
+    "rewrittenLetters": [
+      "C",
+      "D",
+      "A",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#10",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "B",
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#11",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      4,
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "E",
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#12",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#13",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      0
+    ],
+    "rewrittenLetters": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#14",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#15",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#16",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#17",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#18",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      4,
+      1
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#19",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#20",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#21",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#22",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#23",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      2,
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "C",
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#24",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#25",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#26",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      4,
+      1,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "B",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#27",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#28",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#29",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      0,
+      2,
+      3
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#30",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#31",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#32",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "B",
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#33",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#34",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      2
+    ],
+    "rewrittenLetters": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#35",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      2,
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C",
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#36",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#37",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#38",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      0,
+      4,
+      3
+    ],
+    "rewrittenLetters": [
+      "C",
+      "A",
+      "E",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#39",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1,
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "B",
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#40",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#41",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1
+    ],
+    "rewrittenLetters": [
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#42",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#43",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#44",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#45",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3
+    ],
+    "rewrittenLetters": [
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#46",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "C",
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#47",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      0,
+      3
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A",
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#48",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#49",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0
+    ],
+    "rewrittenLetters": [
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#50",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      4,
+      0,
+      1
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#51",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      0,
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#52",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#53",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      1
+    ],
+    "rewrittenLetters": [
+      "B"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#54",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3,
+      4,
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#55",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      4,
+      0
+    ],
+    "rewrittenLetters": [
+      "D",
+      "E",
+      "A"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#56",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      4,
+      2
+    ],
+    "rewrittenLetters": [
+      "E",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#57",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      3
+    ],
+    "rewrittenLetters": [
+      "D"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#58",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      0,
+      1,
+      4
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A",
+      "B",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#59",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      3,
+      0,
+      4
+    ],
+    "rewrittenLetters": [
+      "D",
+      "A",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#60",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#61",
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "rewrittenIndices": [
+      4
+    ],
+    "rewrittenLetters": [
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#62",
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "rewrittenIndices": [
+      2,
+      0,
+      3,
+      4
+    ],
+    "rewrittenLetters": [
+      "C",
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#63",
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "rewrittenIndices": [
+      0,
+      1,
+      2
+    ],
+    "rewrittenLetters": [
+      "A",
+      "B",
+      "C"
+    ]
+  }
+]

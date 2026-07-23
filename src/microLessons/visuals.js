@@ -4650,11 +4650,14 @@ export function RegularPolygon({
         {/* Lines of symmetry */}
         {symmetryAxes.map((ax, i) => (
           <g key={`sym${i}`}>
+            {/* Accent colour + dashed, matching this component's existing
+                diagonal treatment so symmetry lines read as annotation
+                rather than as part of the shape's outline. */}
             <line x1={ax.p1.x} y1={ax.p1.y} x2={ax.p2.x} y2={ax.p2.y}
-              stroke="#6366f1" strokeWidth={2} strokeDasharray="8,5" strokeLinecap="round" />
+              stroke="#818cf8" strokeWidth={2} strokeDasharray="5,4" strokeLinecap="round" />
             {labelMirrorLines && (
               <text x={ax.p1.x + (ax.p1.x > cx ? 12 : -12)} y={ax.p1.y + (ax.p1.y > cy ? 14 : -8)}
-                textAnchor="middle" fontSize={13} fontWeight="bold" fill="#6366f1"
+                textAnchor="middle" fontSize={13} fontWeight="bold" fill="#818cf8"
                 fontFamily="system-ui, -apple-system, sans-serif">{ax.letter}</text>
             )}
           </g>
@@ -5870,54 +5873,78 @@ export function CoordinateGrid({
 
   const labelRegistry = [];
 
+  // Stable per-instance id so <title>/<desc> and the arrow marker never
+  // collide when two grids appear on one page (a mock test review screen).
+  const uid = `cg-${xMin}${xMax}${yMin}${yMax}-${points.length}-${allLines.length}`;
+
+  // Screen-reader description. Built from the actual content so it stays
+  // truthful, and deliberately never states a coordinate the figure itself
+  // withholds — otherwise the accessible text leaks the answer.
+  const described = points
+    .map(p => (p.showCoords === true && !p.unknown)
+      ? `${p.label || 'a point'} at (${p.x}, ${p.y})`
+      : `${p.label || 'a point'}`)
+    .join(', ');
+  const description =
+    `A coordinate grid from ${xMin} to ${xMax} across and ${yMin} to ${yMax} up.` +
+    (described ? ` It shows ${described}.` : '') +
+    (polygon ? ' A shape is drawn on the grid.' : '') +
+    (polygonImage ? ' A second, dashed shape is also drawn.' : '') +
+    (allLines.length ? ` ${allLines.length} dashed line${allLines.length > 1 ? 's are' : ' is'} marked.` : '');
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0' }}>
-      <svg role="img" aria-label="Coordinate grid" viewBox={`0 0 ${vw} ${vh}`}
+      <svg role="img" aria-labelledby={`${uid}-t ${uid}-d`} viewBox={`0 0 ${vw} ${vh}`}
         style={{ width: '100%', maxWidth: 380, height: 'auto' }}>
+        <title id={`${uid}-t`}>Coordinate grid</title>
+        <desc id={`${uid}-d`}>{description}</desc>
         <defs>
-          <marker id="cg-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+          <marker id={`${uid}-arrow`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
             <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
           </marker>
         </defs>
 
-        {/* 1. Gridlines — subtle light blue, every integer */}
+        {/* 1. Surface, then gridlines — neutral so the purple reads as content */}
+        <rect x={left} y={sy(yMax)} width={gridW} height={gridH} fill="#FAFBFF" />
         <g className="grid">
           {ticksX.map(x => (
             <line key={`gx${x}`} x1={sx(x)} y1={sy(yMin)} x2={sx(x)} y2={sy(yMax)}
-              stroke="#93c5fd" strokeWidth={0.8} />
+              stroke="#E5E7EB" strokeWidth={1} />
           ))}
           {ticksY.map(y => (
             <line key={`gy${y}`} x1={sx(xMin)} y1={sy(y)} x2={sx(xMax)} y2={sy(y)}
-              stroke="#93c5fd" strokeWidth={0.8} />
+              stroke="#E5E7EB" strokeWidth={1} />
           ))}
         </g>
 
         {/* 2. Shape fills, image first so the original reads as primary */}
         {polygonImage && polygonImage.length > 2 && (
           <polygon points={toPointsAttr(polygonImage)}
-            fill="#bfdbfe" fillOpacity={0.45} stroke="#3b82f6" strokeWidth={2}
-            strokeDasharray="6,4" strokeLinejoin="round" />
+            fill="#f0f0ff" fillOpacity={0.55} stroke="#818cf8" strokeWidth={2.5}
+            strokeDasharray="7,4" strokeLinejoin="round" strokeLinecap="round" />
         )}
         {polygon && polygon.length > 2 && (
           <polygon points={toPointsAttr(polygon)}
-            fill="#bfdbfe" fillOpacity={0.75} stroke="#3b82f6" strokeWidth={2.5}
-            strokeLinejoin="round" />
+            fill="#f0f0ff" stroke="#6366f1" strokeWidth={3}
+            strokeLinejoin="round" strokeLinecap="round" />
         )}
 
         {/* 3. Mirror / symmetry lines */}
         <g className="mirror-lines">
           {allLines.map(l => (
             <line key={l.key} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
-              stroke="#6366f1" strokeWidth={2} strokeDasharray="8,5" strokeLinecap="round" />
+              stroke="#818cf8" strokeWidth={2.5} strokeDasharray="8,5" strokeLinecap="round" />
           ))}
         </g>
 
         {/* 4. Axes, drawn over the grid so they read as the reference lines */}
         <g className="axes">
           <line x1={sx(xMin)} y1={axisY} x2={sx(xMax) + 8} y2={axisY}
-            stroke="#6366f1" strokeWidth={2} markerEnd="url(#cg-arrow)" />
+            stroke="#6366f1" strokeWidth={2.5} strokeLinecap="round"
+            markerEnd={`url(#${uid}-arrow)`} />
           <line x1={axisX} y1={sy(yMin)} x2={axisX} y2={sy(yMax) - 8}
-            stroke="#6366f1" strokeWidth={2} markerEnd="url(#cg-arrow)" />
+            stroke="#6366f1" strokeWidth={2.5} strokeLinecap="round"
+            markerEnd={`url(#${uid}-arrow)`} />
         </g>
 
         {/* 5. Tick numbers. Zero is drawn once, at the origin. */}
@@ -5925,14 +5952,14 @@ export function CoordinateGrid({
           {ticksX.map(x => (
             x === 0 && yMin <= 0 && yMax >= 0 ? null : (
               <text key={`tx${x}`} x={sx(x)} y={axisY + 18} textAnchor="middle"
-                fontSize={13} fontWeight="bold" fill="#6366f1"
+                fontSize={13} fontWeight="bold" fill="#64748b"
                 fontFamily="system-ui, -apple-system, sans-serif">{x}</text>
             )
           ))}
           {ticksY.map(y => (
             y === 0 && xMin <= 0 && xMax >= 0 ? null : (
               <text key={`ty${y}`} x={axisX - 10} y={sy(y) + 4} textAnchor="end"
-                fontSize={13} fontWeight="bold" fill="#6366f1"
+                fontSize={13} fontWeight="bold" fill="#64748b"
                 fontFamily="system-ui, -apple-system, sans-serif">{y}</text>
             )
           ))}
@@ -5942,7 +5969,7 @@ export function CoordinateGrid({
               rather than sitting in the same column. */}
           {xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0 && (
             <text x={axisX - 7} y={axisY + 15} textAnchor="end"
-              fontSize={12} fontWeight="bold" fill="#6366f1"
+              fontSize={12} fontWeight="bold" fill="#64748b"
               fontFamily="system-ui, -apple-system, sans-serif">0</text>
           )}
         </g>
@@ -5951,7 +5978,9 @@ export function CoordinateGrid({
         <g className="points">
           {points.map((p, i) => {
             const cxp = sx(p.x), cyp = sy(p.y);
-            const colour = p.unknown ? "#dc2626" : "#3b82f6";
+            // Unknown = grey, matching AngleDiagram's "?°" convention (the
+            // skill's named style benchmark). Red would read as "wrong".
+            const colour = p.unknown ? "#9ca3af" : "#6366f1";
             // An unknown point is the thing being asked about, so its
             // coordinates are never rendered — `unknown` overrides showCoords.
             const withCoords = p.showCoords === true && !p.unknown;
@@ -6001,6 +6030,167 @@ export function CoordinateGrid({
             fontFamily="system-ui, -apple-system, sans-serif">{yLabel}</text>
         )}
       </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
+// VennDiagram — 2-set and 3-set sorting diagrams
+// ============================================================
+// Benchmark fix #9c. Real GL papers sort a group by two or three
+// properties and ask the child to read a region, or to combine regions
+// ("how many play football but NOT tennis?", "how many altogether?").
+// Our bank had none of these.
+//
+// Props:
+//   sets           — ['Football', 'Tennis'] or three labels. 2 or 3 only.
+//   regions        — counts keyed by region:
+//                      2 sets: A, B, AB, outside
+//                      3 sets: A, B, C, AB, AC, BC, ABC, outside
+//                    A means "in A only", AB "in both A and B but not C",
+//                    ABC "in all three", outside "in none".
+//   unknownRegions — ['AB'] — render these as a grey "?" instead of a number
+//   outsideLabel   — caption for the outside count, e.g. 'neither'
+//   showTotal      — render "N altogether" below the figure (HTML, not SVG)
+//
+// ANSWER LEAKAGE — see [[feedback_diagrams_must_not_leak_answers]].
+// If the stem asks "how many play both?", the AB region must NOT print its
+// count — list it in unknownRegions so it renders "?" and the child has to
+// work it out from the other regions and a stated total. Printing every
+// count and then asking for one of them is a pure giveaway. The verify
+// harness enforces this against the stem.
+
+export function VennDiagram({
+  sets = ['A', 'B'],
+  regions = {},
+  unknownRegions = [],
+  outsideLabel = 'neither',
+  showTotal = false
+}) {
+  const n = sets.length;
+  if (n !== 2 && n !== 3) return null;
+
+  // Layout follows AngleDiagram, the skill's named style benchmark: generous
+  // top/bottom padding exists purely so set captions can sit OUTSIDE their
+  // circle with room to breathe, never crowding the outline.
+  const vw = 400;
+  const vh = n === 2 ? 320 : 380;
+  const r = n === 2 ? 78 : 76;
+
+  const circles = n === 2
+    ? [{ cx: 150, cy: 170 }, { cx: 250, cy: 170 }]
+    : [{ cx: 152, cy: 175 }, { cx: 248, cy: 175 }, { cx: 200, cy: 251 }];
+
+  // Region anchors, each verified to fall inside its intended region and
+  // outside every other circle (checked against the circle equations, not
+  // eyeballed — see coordinateGridNoLeak/vennDiagram tests).
+  const anchors = n === 2
+    ? { A: [112, 170], B: [288, 170], AB: [200, 170] }
+    : {
+        A: [118, 145], B: [282, 145], C: [200, 283],
+        AB: [200, 148], AC: [155, 222], BC: [245, 222], ABC: [200, 199]
+      };
+
+  // Set captions, placed well clear of every circle. Each is drawn in its
+  // set's accent colour so the caption is tied to its outline by colour —
+  // the same device AngleDiagram uses to bind an angle label to its arc.
+  const setLabelPos = n === 2
+    ? [[95, 72], [305, 72]]
+    : [[88, 84], [312, 84], [200, 347]];
+
+  const accents = ['#818cf8', '#38bdf8', '#34d399'];
+  const isUnknown = (key) => unknownRegions.indexOf(key) !== -1;
+  const uid = `venn-${n}-${Object.keys(regions).join('')}`;
+
+  const total = Object.keys(anchors)
+    .concat(['outside'])
+    .reduce((sum, k) => (typeof regions[k] === 'number' && !isUnknown(k) ? sum + regions[k] : sum), 0);
+
+  const description =
+    `A Venn diagram with ${n} overlapping circles labelled ${sets.join(', ')}, ` +
+    `showing how many items fall in each region.`;
+
+  return (
+    <div className="flex flex-col items-center space-y-2">
+      <svg role="img" aria-labelledby={`${uid}-t ${uid}-d`} viewBox={`0 0 ${vw} ${vh}`}
+        width="100%" style={{ maxWidth: 360 }}>
+        <title id={`${uid}-t`}>Venn diagram</title>
+        <desc id={`${uid}-d`}>{description}</desc>
+
+        {/* Universal set. Quiet and rounded so it frames without competing —
+            it carries meaning (everything counted sits inside it) but is not
+            the subject of the diagram. */}
+        <rect x={16} y={16} width={vw - 32} height={vh - 32} rx={10}
+          fill="#FAFBFF" stroke="#E5E7EB" strokeWidth={1.5} />
+
+        {/* Circles: ONE soft lavender fill across all of them, exactly as
+            AngleDiagram uses a single #f0f0ff shape fill. Set identity comes
+            from the stroke colour, not from different fills — that keeps
+            overlaps clean instead of turning muddy where fills mix. */}
+        {circles.map((c, i) => (
+          <circle key={i} cx={c.cx} cy={c.cy} r={r}
+            fill="#f0f0ff" fillOpacity={0.7}
+            stroke={accents[i]} strokeWidth={2.5} />
+        ))}
+
+        {/* Region counts */}
+        <g className="region-counts">
+          {Object.keys(anchors).map((key) => {
+            const value = regions[key];
+            const unknown = isUnknown(key);
+            if (value == null && !unknown) return null;
+            const [lx, ly] = anchors[key];
+            return (
+              <text key={key} x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
+                fontSize={17} fontWeight="bold"
+                fill={unknown ? '#9ca3af' : '#1e293b'}
+                fontFamily="system-ui, -apple-system, sans-serif">
+                {unknown ? '?' : value}
+              </text>
+            );
+          })}
+        </g>
+
+        {/* Outside count — quiet, bottom-left, clear of every circle */}
+        {(regions.outside != null || isUnknown('outside')) && (
+          <g className="outside-count">
+            {/* Left-aligned to the frame's inner edge so a long caption
+                ("none of these") cannot run out of the box. */}
+            <text x={34} y={vh - 58} textAnchor="start" dominantBaseline="middle"
+              fontSize={17} fontWeight="bold"
+              fill={isUnknown('outside') ? '#9ca3af' : '#1e293b'}
+              fontFamily="system-ui, -apple-system, sans-serif">
+              {isUnknown('outside') ? '?' : regions.outside}
+            </text>
+            <text x={34} y={vh - 38} textAnchor="start" dominantBaseline="middle"
+              fontSize={12} fontWeight="bold" fill="#64748b"
+              fontFamily="system-ui, -apple-system, sans-serif">
+              {outsideLabel}
+            </text>
+          </g>
+        )}
+
+        {/* Set captions, in their circle's accent colour */}
+        <g className="set-labels">
+          {sets.map((label, i) => {
+            const [lx, ly] = setLabelPos[i];
+            return (
+              <text key={i} x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
+                fontSize={16} fontWeight="bold" fill={accents[i]}
+                fontFamily="system-ui, -apple-system, sans-serif">{label}</text>
+            );
+          })}
+        </g>
+      </svg>
+
+      {/* Supplementary text lives BELOW the figure as HTML, never inside the
+          SVG — AngleDiagram's totalLabel convention. */}
+      {showTotal && total > 0 && (
+        <p className="text-center text-sm font-bold text-[#7C3AED]">
+          {total} altogether
+        </p>
+      )}
     </div>
   );
 }

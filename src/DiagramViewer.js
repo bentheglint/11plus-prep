@@ -28,7 +28,8 @@ import {
   LineGraph,
   TriangleAreaDiagram,
   ParallelogramDiagram,
-  CoordinateGrid
+  CoordinateGrid,
+  VennDiagram
 } from './microLessons/visuals';
 
 // Registry of all available visual components
@@ -61,7 +62,8 @@ const COMPONENTS = {
   LineGraph,
   TriangleAreaDiagram,
   ParallelogramDiagram,
-  CoordinateGrid
+  CoordinateGrid,
+  VennDiagram
 };
 
 // URL format:

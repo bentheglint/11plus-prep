@@ -12,7 +12,7 @@ import {
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
   ClockFace, ThermometerDiagram, BuildingDiagram,
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison,
-  RightTriangleExteriorAngle, CoordinateGrid
+  RightTriangleExteriorAngle, CoordinateGrid, VennDiagram
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
@@ -80,7 +80,7 @@ const quizVisualComponents = {
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
   ClockFace, ThermometerDiagram, BuildingDiagram,
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison,
-  RightTriangleExteriorAngle, CoordinateGrid
+  RightTriangleExteriorAngle, CoordinateGrid, VennDiagram
 };
 
 function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin, entitlement, clearJoinCodeMetadata }) {
