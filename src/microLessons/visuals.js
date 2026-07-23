@@ -6200,175 +6200,174 @@ export function VennDiagram({
 }
 
 
+
 // ============================================================
-// NetDiagram — nets of cubes and cuboids
+// NetDiagram — the net of a cube, drawn on squared card
 // ============================================================
-// Benchmark fix #9c, the last of the zero-coverage GL types. Two shapes of
-// question, sharing one layout engine:
+// Benchmark fix #9c. Our bank has ZERO surface-area or net questions across
+// 3,516 Maths items, while the real CGP 10-minute Maths papers use them:
 //
-//   1. `cells` — a net of unit squares on a grid. For spatial-reasoning
-//      items: "which of these folds into a cube?", "which face ends up
-//      opposite the shaded one?"
-//   2. `cuboid` — {length, width, height}, drawn as the standard cross net
-//      with each face sized in proportion and its dimensions labelled. For
-//      read-then-compute items: "what is the surface area of the solid this
-//      net folds into?"
+//   "...to make a cube with side length 2 cm out of card. What is the AREA
+//    OF THE NET she needs?"
+//   "...net of a cube of side 10 cm on a sheet of cardboard [net drawn on a
+//    grid, hatching showing the unused card]. What is the area of the
+//    original sheet?"
 //
-// FOLD LINES ARE THE POINT. An edge shared by two faces is a fold (dashed);
-// an unshared edge is the outline (solid). Getting that distinction right is
-// what makes a net readable as a net rather than a pile of rectangles, so it
-// is computed from the geometry — every edge is counted, appearing twice
-// means fold — never hand-listed per layout.
+// So the real question type is AREA — a cube net laid on squared card, with
+// the child computing the net's area, or the sheet's, or the waste. It is
+// NOT "which of these folds into a cube", and it is never a cuboid net with
+// three different edge lengths: an earlier cuboid-cross variant was dropped
+// because it is not what the papers ask and could not be laid out cleanly
+// (three dimension labels round a lopsided cross, always crowding). Surface
+// area of a cuboid belongs on CuboidDiagram, which already handles it well.
 //
 // Props:
-//   cells       — [{ col, row, label, shaded }] unit-square faces
-//   cuboid      — { length, width, height, unit } proportional cross net
-//   showDims    — label the cuboid's edge dimensions (default true)
+//   cells       — [{ col, row, label, shaded }] the net's squares, on a grid
+//   cellSize    — side length of one square in real units (e.g. 2)
+//   unit        — 'cm' by default
+//   sheet       — { cols, rows } the card the net is cut from; drawn behind
+//                 as squared paper, with the unused card left plain
+//   showSize    — dimension-label one square's side (default true)
+//   showFaceLabels — name the faces (default false; the reference diagrams
+//                 never name faces)
 //   unknownFace — label of a face to render "?" instead of its own label
 //
 // ANSWER LEAKAGE — see [[feedback_diagrams_must_not_leak_answers]].
-// If the stem asks for the surface area, the figure gives the DIMENSIONS and
-// the child computes; it must never print an area. If it asks which face is
-// opposite the shaded one, the candidate faces carry neutral letters, not
-// answers. Use unknownFace to withhold a label the question is asking for.
+// Give the child the SIDE LENGTH and let them compute the area. Never print
+// an area on the figure when the question asks for one.
 
 export function NetDiagram({
   cells = null,
-  cuboid = null,
-  showDims = true,
+  cellSize = null,
+  unit = 'cm',
+  sheet = null,
+  showSize = true,
   showFaceLabels = false,
   unknownFace = null
 }) {
-  // ---- Build the face rectangles, in abstract units ----
-  let faces = [];
+  if (!cells || !cells.length) return null;
 
-  if (cuboid) {
-    const L = Number(cuboid.length), W = Number(cuboid.width), H = Number(cuboid.height);
-    if (!(L > 0 && W > 0 && H > 0)) return null;
-    // Standard cross net. Column widths [W, L, W, L]; row heights [W, H, W].
-    const colX = [0, W, W + L, W + L + W];
-    const rowY = [0, W, W + H];
-    faces = [
-      { x: colX[1], y: rowY[0], w: L, h: W, label: 'top' },
-      { x: colX[0], y: rowY[1], w: W, h: H, label: 'left' },
-      { x: colX[1], y: rowY[1], w: L, h: H, label: 'front' },
-      { x: colX[2], y: rowY[1], w: W, h: H, label: 'right' },
-      { x: colX[3], y: rowY[1], w: L, h: H, label: 'back' },
-      { x: colX[1], y: rowY[2], w: L, h: W, label: 'bottom' },
-    ];
-  } else if (cells && cells.length) {
-    faces = cells.map(c => ({
-      x: c.col, y: c.row, w: 1, h: 1, label: c.label || null, shaded: !!c.shaded
-    }));
-  } else {
-    return null;
-  }
+  const faces = cells.map(c => ({
+    x: c.col, y: c.row,
+    label: c.label || null, shaded: !!c.shaded
+  }));
 
-  // ---- Fit to the viewBox ----
-  const minX = Math.min(...faces.map(f => f.x));
-  const minY = Math.min(...faces.map(f => f.y));
-  const maxX = Math.max(...faces.map(f => f.x + f.w));
-  const maxY = Math.max(...faces.map(f => f.y + f.h));
+  // The drawing area is the card sheet when there is one, else just the net.
+  const netMinX = Math.min(...faces.map(f => f.x));
+  const netMinY = Math.min(...faces.map(f => f.y));
+  const netMaxX = Math.max(...faces.map(f => f.x + 1));
+  const netMaxY = Math.max(...faces.map(f => f.y + 1));
+  const minX = sheet ? 0 : netMinX;
+  const minY = sheet ? 0 : netMinY;
+  const maxX = sheet ? Math.max(sheet.cols, netMaxX) : netMaxX;
+  const maxY = sheet ? Math.max(sheet.rows, netMaxY) : netMaxY;
   const unitsW = maxX - minX, unitsH = maxY - minY;
 
-  // The viewBox HEIGHT follows the net's own aspect rather than being fixed.
-  // A cuboid cross is wide and flat (22 x 11 units for an 8x3x5), so a fixed
-  // square-ish canvas pinned the scale to the width and left the figure tiny
-  // inside big empty margins — which is what made this look cramped.
+  // The viewBox height follows the drawing's own aspect, so the figure fills
+  // the canvas instead of sitting small inside fixed margins.
   const vw = 400;
-  const padX = showDims && cuboid ? 68 : 30;   // room for a rotated dim label
-  const padY = showDims && cuboid ? 52 : 30;
-  const drawW = vw - 2 * padX;
-  const scale = drawW / unitsW;
-  const netW = unitsW * scale, netH = unitsH * scale;
-  const vh = Math.round(netH + 2 * padY);
+  const padX = showSize && cellSize != null ? 40 : 26;
+  const padY = showSize && cellSize != null ? 48 : 26;
+  const scale = (vw - 2 * padX) / unitsW;
+  const drawnH = unitsH * scale;
+  const vh = Math.round(drawnH + 2 * padY);
   const ox = padX - minX * scale;
   const oy = padY - minY * scale;
-
   const px = (u) => ox + u * scale;
   const py = (u) => oy + u * scale;
 
-  // ---- Classify every edge: shared == fold, unshared == outline ----
-  // Faces are grid-aligned in both modes, so edges either coincide exactly
-  // or not at all, and a simple occurrence count is exact.
+  // Every edge is counted; one that appears twice is shared, so it is a fold
+  // rather than part of the outline. Derived from the geometry and never
+  // listed per layout — which is what lets any of the 11 cube nets just work.
   const edgeMap = new Map();
-  const keyOf = (x1, y1, x2, y2) => {
-    const r = (v) => Math.round(v * 1000) / 1000;
-    return `${r(x1)},${r(y1)},${r(x2)},${r(y2)}`;
-  };
-  faces.forEach(f => {
-    const { x, y, w, h } = f;
-    const es = [
-      [x, y, x + w, y],         // top
-      [x + w, y, x + w, y + h], // right
-      [x, y + h, x + w, y + h], // bottom
-      [x, y, x, y + h],         // left
-    ];
-    es.forEach(e => {
-      const k = keyOf(e[0], e[1], e[2], e[3]);
-      edgeMap.set(k, (edgeMap.get(k) || 0) + 1);
-    });
+  faces.forEach(({ x, y }) => {
+    [[x, y, x + 1, y], [x + 1, y, x + 1, y + 1],
+     [x, y + 1, x + 1, y + 1], [x, y, x, y + 1]]
+      .forEach(e => {
+        const k = e.join(',');
+        edgeMap.set(k, (edgeMap.get(k) || 0) + 1);
+      });
   });
-
   const folds = [], outline = [];
   edgeMap.forEach((count, k) => {
     const [x1, y1, x2, y2] = k.split(',').map(Number);
     (count > 1 ? folds : outline).push({ x1, y1, x2, y2 });
   });
 
-  const uid = `net-${cuboid ? `${cuboid.length}x${cuboid.width}x${cuboid.height}` : `c${faces.length}`}`;
-  const unit = (cuboid && cuboid.unit) || 'cm';
-  const description = cuboid
-    ? `The net of a cuboid, opened out flat into six rectangles. ` +
-      `Its edges are labelled ${cuboid.length}, ${cuboid.width} and ${cuboid.height} ${unit}.`
-    : `A net made of ${faces.length} squares joined edge to edge, which can be folded up.`;
+  const uid = 'net-' + faces.length + '-' + faces.map(f => String(f.x) + String(f.y)).join('');
+  const sideText = cellSize != null ? cellSize + ' ' + unit : null;
+  const description =
+    'The net of a cube, made of ' + faces.length + ' equal squares joined edge to edge' +
+    (sheet ? ', drawn on a sheet of squared card ' + sheet.cols + ' by ' + sheet.rows + ' squares' : '') +
+    (sideText ? ', each square ' + sideText + ' along a side' : '') + '.';
+
+  const sheetTicksX = [], sheetTicksY = [];
+  if (sheet) {
+    for (let i = 0; i <= sheet.cols; i++) sheetTicksX.push(i);
+    for (let j = 0; j <= sheet.rows; j++) sheetTicksY.push(j);
+  }
+
+  // The square carrying the side dimension: top-most, then left-most, so the
+  // dimension line always sits in clear space above the figure.
+  const dimFace = faces.reduce((best, c) =>
+    (c.y < best.y || (c.y === best.y && c.x < best.x)) ? c : best, faces[0]);
 
   return (
-    <div className="flex flex-col items-center space-y-2">
-      <svg role="img" aria-labelledby={`${uid}-t ${uid}-d`} viewBox={`0 0 ${vw} ${vh}`}
-        width="100%" style={{ maxWidth: 360 }}>
-        <title id={`${uid}-t`}>Net diagram</title>
-        <desc id={`${uid}-d`}>{description}</desc>
+    <div className="flex justify-center">
+      <svg role="img" aria-labelledby={uid + '-t ' + uid + '-d'} viewBox={'0 0 ' + vw + ' ' + vh}
+        className="w-full" style={{ maxWidth: 380 }}>
+        <title id={uid + '-t'}>Net of a cube</title>
+        <desc id={uid + '-d'}>{description}</desc>
 
-        {/* 1. Face fills — one soft lavender across the whole net, exactly as
-               AngleDiagram fills its shape. A shaded face is picked out with
-               an accent instead of a second fill colour. */}
+        {/* 1. The card sheet — squared paper behind, unused card left plain,
+               which is how the real papers present it. */}
+        {sheet && (
+          <g className="sheet">
+            <rect x={px(0)} y={py(0)} width={sheet.cols * scale} height={sheet.rows * scale}
+              fill="white" stroke="#3b82f6" strokeWidth="2.5" rx="4" />
+            {sheetTicksX.map(i => (
+              <line key={'sx' + i} x1={px(i)} y1={py(0)} x2={px(i)} y2={py(sheet.rows)}
+                stroke="#93c5fd" strokeWidth="0.8" />
+            ))}
+            {sheetTicksY.map(j => (
+              <line key={'sy' + j} x1={px(0)} y1={py(j)} x2={px(sheet.cols)} y2={py(j)}
+                stroke="#93c5fd" strokeWidth="0.8" />
+            ))}
+          </g>
+        )}
+
+        {/* 2. Face fills */}
         {faces.map((f, i) => (
-          <rect key={i} x={px(f.x)} y={py(f.y)} width={f.w * scale} height={f.h * scale}
+          <rect key={i} x={px(f.x)} y={py(f.y)} width={scale} height={scale}
             fill={f.shaded ? '#93c5fd' : '#bfdbfe'} />
         ))}
 
-        {/* 2. Fold lines — dashed accent. This is what makes it read as a net. */}
+        {/* 3. Fold lines — dashed. This is what makes it read as a net. */}
         <g className="folds">
           {folds.map((e, i) => (
             <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
-              stroke="#6366f1" strokeWidth={1.5} strokeDasharray="5,4" strokeLinecap="round" />
+              stroke="#6366f1" strokeWidth="1.5" strokeDasharray="5,4" strokeLinecap="round" />
           ))}
         </g>
 
-        {/* 3. Outline — solid primary, drawn last so corners stay crisp */}
+        {/* 4. Outline — solid, drawn last so the corners stay crisp */}
         <g className="net-outline">
           {outline.map((e, i) => (
             <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
-              stroke="#3b82f6" strokeWidth={2.5} strokeLinecap="round" />
+              stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" />
           ))}
         </g>
 
-        {/* 4. Face labels */}
+        {/* 5. Face labels — off unless asked, and only when a square is big
+               enough to hold one legibly. */}
         <g className="face-labels">
           {faces.map((f, i) => {
-            // OFF by default: RectangleDiagram and CuboidDiagram never name
-            // their faces. On a cuboid net the left/right faces are only as
-            // wide as the depth, so a label fills the face and collides with
-            // the fold lines either side.
-            if (!f.label || !showFaceLabels) return null;
-            // Never label a face too small to hold the text legibly.
-            if (f.w * scale < 46 || f.h * scale < 24) return null;
+            if (!f.label || !showFaceLabels || scale < 40) return null;
             const hidden = unknownFace != null && f.label === unknownFace;
             return (
-              <text key={i} x={px(f.x + f.w / 2)} y={py(f.y + f.h / 2)}
+              <text key={i} x={px(f.x + 0.5)} y={py(f.y + 0.5)}
                 textAnchor="middle" dominantBaseline="middle"
-                fontSize={14} fontWeight="bold"
+                fontSize="16" fontWeight="bold"
                 fill={hidden ? '#dc2626' : '#1e40af'}
                 fontFamily="system-ui, -apple-system, sans-serif">
                 {hidden ? '?' : f.label}
@@ -6377,66 +6376,28 @@ export function NetDiagram({
           })}
         </g>
 
-        {/* 5. Dimension labels, placed OUTSIDE the net so they never sit on a
-               fold or an outline. Only the three distinct edge lengths are
-               labelled — repeating all twelve would clutter it. */}
-        {cuboid && showDims && (() => {
-          const L = Number(cuboid.length), W = Number(cuboid.width), H = Number(cuboid.height);
-          const front = faces[2], top = faces[0], left = faces[1];
-          return (
-            <g className="dims">
-              {/* Dimension lines with arrowheads at BOTH ends, 20 out from
-                  the figure with the label 22 beyond — the same treatment
-                  RectangleDiagram and CuboidDiagram use. The measurement
-                  reads as a measurement, not as floating text. */}
-
-              {/* length, under the bottom face */}
-              <line x1={px(faces[5].x)} y1={py(maxY) + 20} x2={px(faces[5].x + faces[5].w)} y2={py(maxY) + 20}
-                stroke="#6366f1" strokeWidth="2"
-                markerStart={`url(#${uid}-al)`} markerEnd={`url(#${uid}-ar)`} />
-              <text x={px(faces[5].x + faces[5].w / 2)} y={py(maxY) + 42}
-                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
-                fontFamily="system-ui, -apple-system, sans-serif">{L} {unit}</text>
-
-              {/* height, left of the left face — label rotated to follow the edge */}
-              <line x1={px(minX) - 20} y1={py(left.y)} x2={px(minX) - 20} y2={py(left.y + left.h)}
-                stroke="#6366f1" strokeWidth="2"
-                markerStart={`url(#${uid}-au)`} markerEnd={`url(#${uid}-ad)`} />
-              <text x={px(minX) - 38} y={py(left.y + left.h / 2)}
-                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
-                fontFamily="system-ui, -apple-system, sans-serif"
-                transform={`rotate(-90, ${px(minX) - 38}, ${py(left.y + left.h / 2)})`}>{H} {unit}</text>
-
-              {/* width/depth. Measured HORIZONTALLY across the left face,
-                  which is W wide, and drawn clear above the whole net. Two
-                  vertical dimensions stacked on the left edge end up reading
-                  as one string ("5 cm 3 cm"), and beside the top face the
-                  arrowhead lands on a neighbouring face's corner — so it goes
-                  here, in its own empty zone, perpendicular to the other two. */}
-              <line x1={px(left.x)} y1={py(minY) - 20} x2={px(left.x + left.w)} y2={py(minY) - 20}
-                stroke="#6366f1" strokeWidth="2"
-                markerStart={`url(#${uid}-al)`} markerEnd={`url(#${uid}-ar)`} />
-              <text x={px(left.x + left.w / 2)} y={py(minY) - 28}
-                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
-                fontFamily="system-ui, -apple-system, sans-serif">{W} {unit}</text>
-
-              <defs>
-                <marker id={`${uid}-ar`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
-                </marker>
-                <marker id={`${uid}-al`} markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
-                  <polygon points="8 0, 0 3, 8 6" fill="#6366f1" />
-                </marker>
-                <marker id={`${uid}-ad`} markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto">
-                  <polygon points="0 0, 3 8, 6 0" fill="#6366f1" />
-                </marker>
-                <marker id={`${uid}-au`} markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto">
-                  <polygon points="0 8, 3 0, 6 8" fill="#6366f1" />
-                </marker>
-              </defs>
-            </g>
-          );
-        })()}
+        {/* 6. One square's side, dimensioned exactly as RectangleDiagram does:
+               line offset from the figure, arrowheads both ends, bold label
+               beyond it. The child is given the SIDE and works out the area —
+               printing an area here would hand over the answer. */}
+        {showSize && sideText && (
+          <g className="dims">
+            <line x1={px(dimFace.x)} y1={py(dimFace.y) - 20} x2={px(dimFace.x + 1)} y2={py(dimFace.y) - 20}
+              stroke="#6366f1" strokeWidth="2"
+              markerStart={'url(#' + uid + '-al)'} markerEnd={'url(#' + uid + '-ar)'} />
+            <text x={px(dimFace.x + 0.5)} y={py(dimFace.y) - 28} textAnchor="middle"
+              fontSize="18" fontWeight="bold" fill="#6366f1"
+              fontFamily="system-ui, -apple-system, sans-serif">{sideText}</text>
+            <defs>
+              <marker id={uid + '-ar'} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
+              </marker>
+              <marker id={uid + '-al'} markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+                <polygon points="8 0, 0 3, 8 6" fill="#6366f1" />
+              </marker>
+            </defs>
+          </g>
+        )}
       </svg>
     </div>
   );

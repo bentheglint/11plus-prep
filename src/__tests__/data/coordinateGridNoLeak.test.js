@@ -138,12 +138,50 @@ describe('SVG group names do not collide with Tailwind utilities', () => {
   it.each([
     ['CoordinateGrid', <CoordinateGrid xRange={[0, 6]} yRange={[0, 6]} polygon={[[1, 1], [3, 1], [3, 3]]} mirrorLine={{ vertical: 4 }} />],
     ['VennDiagram', <VennDiagram sets={['A', 'B']} regions={{ A: 1, B: 2, AB: 3, outside: 4 }} />],
-    ['NetDiagram', <NetDiagram cuboid={{ length: 4, width: 2, height: 3 }} />],
+    ['NetDiagram', <NetDiagram
+      cells={[{ col: 1, row: 0 }, { col: 0, row: 1 }, { col: 1, row: 1 },
+              { col: 2, row: 1 }, { col: 3, row: 1 }, { col: 1, row: 2 }]}
+      cellSize={2} sheet={{ cols: 5, rows: 4 }} />],
   ])('%s uses no Tailwind-colliding group names', (_name, ui) => {
     const { container } = render(ui);
     const offenders = [...container.querySelectorAll('svg g[class]')]
       .map((g) => g.getAttribute('class'))
       .filter((cls) => TAILWIND_UTILITIES.includes(cls));
     expect(offenders).toEqual([]);
+  });
+});
+
+describe('NetDiagram gives the side, never the area', () => {
+  // The real CGP questions ask for the AREA of the net, or of the card, or
+  // the waste. The figure supplies the SIDE LENGTH and the child computes —
+  // printing an area would hand over the answer, the same leak class as
+  // printing coordinates beside the point a question asks about.
+  const CROSS = [
+    { col: 1, row: 0 }, { col: 0, row: 1 }, { col: 1, row: 1 },
+    { col: 2, row: 1 }, { col: 3, row: 1 }, { col: 1, row: 2 },
+  ];
+
+  it('shows the side length and no computed area', () => {
+    const { container } = render(
+      <NetDiagram cells={CROSS} cellSize={10} unit="cm" sheet={{ cols: 5, rows: 4 }} />
+    );
+    const texts = [...container.querySelectorAll('text')].map((t) => t.textContent);
+    expect(texts).toContain('10 cm');
+    // 6 x 10 x 10 = 600 is the net's area; 5 x 4 x 10 x 10 = 2000 the sheet's.
+    expect(texts.join(' ')).not.toMatch(/600|2000|cm²|cm2/);
+  });
+
+  it('derives folds from the geometry, so any valid cube net works', () => {
+    // A cube net always has 6 squares, 5 shared edges (folds) and therefore
+    // 24 - 2*5 = 14 outline edges — whatever arrangement it takes.
+    const T_NET = [
+      { col: 0, row: 0 }, { col: 1, row: 0 }, { col: 2, row: 0 },
+      { col: 3, row: 0 }, { col: 1, row: 1 }, { col: 1, row: 2 },
+    ];
+    [CROSS, T_NET].forEach((cells) => {
+      const { container } = render(<NetDiagram cells={cells} cellSize={2} />);
+      expect(container.querySelectorAll('g.folds line')).toHaveLength(5);
+      expect(container.querySelectorAll('g.net-outline line')).toHaveLength(14);
+    });
   });
 });
