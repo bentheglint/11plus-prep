@@ -52,6 +52,11 @@ yarn-error.log*
 !/.claude/skills/churn-prevention/
 !/.claude/skills/referrals/
 !/.claude/skills/pricing/
+# Project design/build systems — these govern app SOURCE output, so they must
+# travel with the repo (23 Jul 2026). diagram-design was PC-only until now,
+# which blocked the benchmark #9b/#9c diagram component builds on the laptop.
+!/.claude/skills/diagram-design/
+!/.claude/skills/game-design/
 !/.claude/agents/
 /.claude/agents/*
 !/.claude/agents/pricing-advisor.md
@@ -75,10 +80,15 @@ yarn-error.log*
 # NOTE: /research/past-papers is deliberately NOT ignored here. Parsed paper
 # TEXT (.md) is tracked via the /research/** + !*.md rules above so it syncs
 # across machines for the Oracle; only its scanned image binaries stay ignored.
-/Examples for English and VR
+# Ignore the scans, but keep any ANALYSIS text (.md) — it is project knowledge
+# and was silently PC-only until 23 Jul 2026. A bare dir-ignore cannot be
+# re-included per-file, hence the /* + !*.md shape.
+/Examples for English and VR/*
+!/Examples for English and VR/*.md
+/Micro-Lesson Research/*
+!/Micro-Lesson Research/*.md
 /research/kingsbury
 /research/maths-reference
-/Micro-Lesson Research
 /Lesson Plan Examples
 /difficulty-scores
 
