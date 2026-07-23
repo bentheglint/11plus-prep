@@ -109,6 +109,12 @@ dev-review-notes.json
 # Wrangler local state (nested)
 workers/**/.wrangler
 
+# Authoring-wave working files. The data-generation scripts default here now
+# (they used to default to one machine's Claude scratchpad, so their defaults
+# only worked on the laptop). Contents are intermediate Oracle output —
+# regenerable, and the real runs pass --data explicitly.
+/scripts/data-generation/work/
+
 # Batch processing scripts (one-off, not app code)
 scripts/bias-batch-*
 scripts/oracle-batch-*

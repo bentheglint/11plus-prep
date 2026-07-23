@@ -21,8 +21,16 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const SCRATCHPAD = 'C:/Users/benja/AppData/Local/Temp/claude/C--Users-benja-Documents-11plus-prep/849c3908-8662-4ef1-b26e-ed306edeb9f4/scratchpad';
+// Default working-file location, resolved RELATIVE TO THE REPO. This used to
+// hard-code one machine's Claude scratchpad path (C:/Users/benja/...), so the
+// script's defaults only worked on the laptop — the same portability trap that
+// kept the diagram-design skill invisible to git for weeks. Pass the explicit
+// --data/--target flags for a real run; override the default with the
+// MATHS_INSERT_SCRATCHPAD env var if you keep working files elsewhere.
+const SCRATCHPAD = process.env.MATHS_INSERT_SCRATCHPAD
+  || path.join(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..'), 'scripts', 'data-generation', 'work');
 
 const args = process.argv.slice(2);
 const flags = args.filter(a => a.startsWith('--'));

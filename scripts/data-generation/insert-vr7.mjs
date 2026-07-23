@@ -16,7 +16,14 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(__dirname, '..', '..');
-const SP = 'C:/Users/benja/AppData/Local/Temp/claude/C--Users-benja-Documents-11plus-prep/580f678c-31ee-402e-88fe-6de06ba58629/scratchpad';
+// Default working-file location, resolved RELATIVE TO THE REPO. This used to
+// hard-code one machine's Claude scratchpad path (C:/Users/benja/...), so the
+// script's defaults only worked on the laptop — the same portability trap that
+// kept the diagram-design skill invisible to git for weeks. Pass the explicit
+// --data/--target flags for a real run; override the default with the
+// MATHS_INSERT_SCRATCHPAD env var if you keep working files elsewhere.
+const SP = process.env.MATHS_INSERT_SCRATCHPAD
+  || path.join(REPO, 'scripts', 'data-generation', 'work');
 const apply = process.argv.includes('--apply');
 
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}

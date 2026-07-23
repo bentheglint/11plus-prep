@@ -26,7 +26,15 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(__dirname, '..', '..');
-const SCRATCHPAD = 'C:/Users/benja/AppData/Local/Temp/claude/C--Users-benja-Documents-11plus-prep/849c3908-8662-4ef1-b26e-ed306edeb9f4/scratchpad';
+
+// Default input location, resolved RELATIVE TO THE REPO. This used to hard-code
+// one machine's Claude scratchpad path (C:/Users/benja/...), which meant the
+// script's defaults only worked on the laptop — the same portability trap that
+// kept the diagram-design skill invisible to git. Always pass --data explicitly
+// for a real run; this default just keeps the script runnable anywhere.
+// Override with MATHS_INSERT_SCRATCHPAD if you keep working files elsewhere.
+const SCRATCHPAD = process.env.MATHS_INSERT_SCRATCHPAD
+  || path.join(REPO, 'scripts', 'data-generation', 'work');
 
 const SEED = 20260723; // fixed constant (today's authoring date) — deterministic, reproducible
 
