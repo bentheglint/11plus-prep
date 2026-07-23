@@ -30,7 +30,21 @@ import {
   ParallelogramDiagram,
   CoordinateGrid,
   VennDiagram,
-  NetDiagram
+  NetDiagram,
+  RectangleComparison,
+  RectangleGrid,
+  CuboidComparison,
+  SlidingWindow,
+  LogicDiagram,
+  DotPattern,
+  RightTriangleExteriorAngle,
+  ClockFace,
+  BarChart,
+  PieChart,
+  TwoWayTable,
+  PathBorderDiagram,
+  ThermometerDiagram,
+  BuildingDiagram
 } from './microLessons/visuals';
 
 // Registry of all available visual components
@@ -65,7 +79,21 @@ const COMPONENTS = {
   ParallelogramDiagram,
   CoordinateGrid,
   VennDiagram,
-  NetDiagram
+  NetDiagram,
+  RectangleComparison,
+  RectangleGrid,
+  CuboidComparison,
+  SlidingWindow,
+  LogicDiagram,
+  DotPattern,
+  RightTriangleExteriorAngle,
+  ClockFace,
+  BarChart,
+  PieChart,
+  TwoWayTable,
+  PathBorderDiagram,
+  ThermometerDiagram,
+  BuildingDiagram
 };
 
 // URL format:
