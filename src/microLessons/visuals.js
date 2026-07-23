@@ -5900,32 +5900,32 @@ export function CoordinateGrid({
         <desc id={`${uid}-d`}>{description}</desc>
         <defs>
           <marker id={`${uid}-arrow`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#1e293b" />
+            <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
           </marker>
         </defs>
 
         {/* 1. Surface, then gridlines — neutral so the purple reads as content */}
-        <rect x={left} y={sy(yMax)} width={gridW} height={gridH} fill="#FAFBFF" />
+        
         <g className="cg-grid">
           {ticksX.map(x => (
             <line key={`gx${x}`} x1={sx(x)} y1={sy(yMin)} x2={sx(x)} y2={sy(yMax)}
-              stroke="#E5E7EB" strokeWidth={1} />
+              stroke="#93c5fd" strokeWidth={0.8} />
           ))}
           {ticksY.map(y => (
             <line key={`gy${y}`} x1={sx(xMin)} y1={sy(y)} x2={sx(xMax)} y2={sy(y)}
-              stroke="#E5E7EB" strokeWidth={1} />
+              stroke="#93c5fd" strokeWidth={0.8} />
           ))}
         </g>
 
         {/* 2. Shape fills, image first so the original reads as primary */}
         {polygonImage && polygonImage.length > 2 && (
           <polygon points={toPointsAttr(polygonImage)}
-            fill="#FDCB6E30" stroke="#FDCB6E" strokeWidth={2.5}
+            fill="#bfdbfe" fillOpacity={0.45} stroke="#3b82f6" strokeWidth={2}
             strokeDasharray="7,4" strokeLinejoin="round" strokeLinecap="round" />
         )}
         {polygon && polygon.length > 2 && (
           <polygon points={toPointsAttr(polygon)}
-            fill="#7C3AED30" stroke="#7C3AED" strokeWidth={2.5}
+            fill="#bfdbfe" stroke="#3b82f6" strokeWidth={2.5}
             strokeLinejoin="round" strokeLinecap="round" />
         )}
 
@@ -5933,17 +5933,17 @@ export function CoordinateGrid({
         <g className="mirror-lines">
           {allLines.map(l => (
             <line key={l.key} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
-              stroke="#1e293b" strokeWidth={2.5} strokeDasharray="8,5" strokeLinecap="round" />
+              stroke="#6366f1" strokeWidth={2} strokeDasharray="8,5" strokeLinecap="round" />
           ))}
         </g>
 
         {/* 4. Axes, drawn over the grid so they read as the reference lines */}
         <g className="axes">
           <line x1={sx(xMin)} y1={axisY} x2={sx(xMax) + 8} y2={axisY}
-            stroke="#1e293b" strokeWidth={3} strokeLinecap="round"
+            stroke="#6366f1" strokeWidth={2} strokeLinecap="round"
             markerEnd={`url(#${uid}-arrow)`} />
           <line x1={axisX} y1={sy(yMin)} x2={axisX} y2={sy(yMax) - 8}
-            stroke="#1e293b" strokeWidth={3} strokeLinecap="round"
+            stroke="#6366f1" strokeWidth={2} strokeLinecap="round"
             markerEnd={`url(#${uid}-arrow)`} />
         </g>
 
@@ -5952,14 +5952,14 @@ export function CoordinateGrid({
           {ticksX.map(x => (
             x === 0 && yMin <= 0 && yMax >= 0 ? null : (
               <text key={`tx${x}`} x={sx(x)} y={axisY + 18} textAnchor="middle"
-                fontSize={13} fontWeight="bold" fill="#64748b"
+                fontSize={13} fontWeight="bold" fill="#6366f1"
                 fontFamily="system-ui, -apple-system, sans-serif">{x}</text>
             )
           ))}
           {ticksY.map(y => (
             y === 0 && xMin <= 0 && xMax >= 0 ? null : (
               <text key={`ty${y}`} x={axisX - 10} y={sy(y) + 4} textAnchor="end"
-                fontSize={13} fontWeight="bold" fill="#64748b"
+                fontSize={13} fontWeight="bold" fill="#6366f1"
                 fontFamily="system-ui, -apple-system, sans-serif">{y}</text>
             )
           ))}
@@ -5969,7 +5969,7 @@ export function CoordinateGrid({
               rather than sitting in the same column. */}
           {xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0 && (
             <text x={axisX - 7} y={axisY + 15} textAnchor="end"
-              fontSize={12} fontWeight="bold" fill="#64748b"
+              fontSize={12} fontWeight="bold" fill="#6366f1"
               fontFamily="system-ui, -apple-system, sans-serif">0</text>
           )}
         </g>
@@ -5980,7 +5980,7 @@ export function CoordinateGrid({
             const cxp = sx(p.x), cyp = sy(p.y);
             // Unknown = grey, matching AngleDiagram's "?°" convention (the
             // skill's named style benchmark). Red would read as "wrong".
-            const colour = p.unknown ? "#dc2626" : "#7C3AED";
+            const colour = p.unknown ? "#dc2626" : "#6366f1";
             // An unknown point is the thing being asked about, so its
             // coordinates are never rendered — `unknown` overrides showCoords.
             const withCoords = p.showCoords === true && !p.unknown;
@@ -5993,10 +5993,10 @@ export function CoordinateGrid({
               : null;
             return (
               <g key={i}>
-                <circle cx={cxp} cy={cyp} r={5} fill={colour} stroke="white" strokeWidth={2} />
+                <circle cx={cxp} cy={cyp} r={5} fill={colour} stroke="white" strokeWidth={1.5} />
                 {pos && (
                   <text x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
-                    fontSize={pos.fontSize} fontWeight={800} fill={colour}
+                    fontSize={18} fontWeight="bold" fill={colour}
                     fontFamily="system-ui, -apple-system, sans-serif">{text}</text>
                 )}
               </g>
@@ -6012,7 +6012,7 @@ export function CoordinateGrid({
               { w: vw, h: vh }, { fontSize: 14, charWidth: 9, allowShrink: true, margin: 3 });
             return (
               <text key={l.key} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
-                fontSize={pos.fontSize} fontWeight={800} fill="#7C3AED"
+                fontSize={16} fontWeight="bold" fill="#6366f1"
                 fontFamily="system-ui, -apple-system, sans-serif">{l.letter}</text>
             );
           })}
@@ -6021,12 +6021,12 @@ export function CoordinateGrid({
         {/* 8. Axis captions */}
         {xLabel && (
           <text x={sx(xMax) + 6} y={axisY - 10} textAnchor="end"
-            fontSize={14} fontWeight="bold" fill="#64748b"
+            fontSize={16} fontWeight="bold" fill="#6366f1"
             fontFamily="system-ui, -apple-system, sans-serif">{xLabel}</text>
         )}
         {yLabel && (
           <text x={axisX + 12} y={sy(yMax) - 6} textAnchor="start"
-            fontSize={14} fontWeight="bold" fill="#64748b"
+            fontSize={16} fontWeight="bold" fill="#6366f1"
             fontFamily="system-ui, -apple-system, sans-serif">{yLabel}</text>
         )}
       </svg>
@@ -6099,7 +6099,10 @@ export function VennDiagram({
     ? [[95, 72], [305, 72]]
     : [[88, 84], [312, 84], [200, 347]];
 
-  const accents = ['#7C3AED', '#FDCB6E', '#22C55E'];
+  // One family fill for every circle, exactly as RectangleDiagram uses a
+  // single #bfdbfe. Overlaps darken naturally; sets are told apart by their
+  // captions rather than by clashing fills.
+  const accents = ['#6366f1', '#6366f1', '#6366f1'];
   const isUnknown = (key) => unknownRegions.indexOf(key) !== -1;
   const uid = `venn-${n}-${Object.keys(regions).join('')}`;
 
@@ -6122,16 +6125,17 @@ export function VennDiagram({
             it carries meaning (everything counted sits inside it) but is not
             the subject of the diagram. */}
         <rect x={16} y={16} width={vw - 32} height={vh - 32} rx={10}
-          fill="none" stroke="#E5E7EB" strokeWidth={2} />
+          fill="none" stroke="#93c5fd" strokeWidth={1.5} />
 
-        {/* Circles: ONE soft lavender fill across all of them, exactly as
-            AngleDiagram uses a single #f0f0ff shape fill. Set identity comes
-            from the stroke colour, not from different fills — that keeps
-            overlaps clean instead of turning muddy where fills mix. */}
+        {/* Circles: the shape-and-measurement family's single #bfdbfe fill
+            with a #3b82f6 outline, matching RectangleDiagram and
+            CuboidDiagram. Overlaps darken naturally because the fill is
+            semi-transparent; sets are told apart by their captions rather
+            than by clashing colours. */}
         {circles.map((c, i) => (
           <circle key={i} cx={c.cx} cy={c.cy} r={r}
-            fill={accents[i] + '30'}
-            stroke={accents[i]} strokeWidth={2.5} />
+            fill="#bfdbfe" fillOpacity={0.5}
+            stroke="#3b82f6" strokeWidth={2.5} />
         ))}
 
         {/* Region counts */}
@@ -6143,8 +6147,8 @@ export function VennDiagram({
             const [lx, ly] = anchors[key];
             return (
               <text key={key} x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
-                fontSize={17} fontWeight="bold"
-                fill={unknown ? '#dc2626' : '#1e293b'}
+                fontSize={18} fontWeight="bold"
+                fill={unknown ? '#dc2626' : '#1e40af'}
                 fontFamily="system-ui, -apple-system, sans-serif">
                 {unknown ? '?' : value}
               </text>
@@ -6158,13 +6162,13 @@ export function VennDiagram({
             {/* Left-aligned to the frame's inner edge so a long caption
                 ("none of these") cannot run out of the box. */}
             <text x={34} y={vh - 58} textAnchor="start" dominantBaseline="middle"
-              fontSize={17} fontWeight="bold"
-              fill={isUnknown('outside') ? '#dc2626' : '#1e293b'}
+              fontSize={18} fontWeight="bold"
+              fill={isUnknown('outside') ? '#dc2626' : '#1e40af'}
               fontFamily="system-ui, -apple-system, sans-serif">
               {isUnknown('outside') ? '?' : regions.outside}
             </text>
             <text x={34} y={vh - 38} textAnchor="start" dominantBaseline="middle"
-              fontSize={12} fontWeight="bold" fill="#64748b"
+              fontSize={13} fontWeight="bold" fill="#6366f1"
               fontFamily="system-ui, -apple-system, sans-serif">
               {outsideLabel}
             </text>
@@ -6177,7 +6181,7 @@ export function VennDiagram({
             const [lx, ly] = setLabelPos[i];
             return (
               <text key={i} x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
-                fontSize={16} fontWeight="bold" fill={accents[i]}
+                fontSize={16} fontWeight="bold" fill="#6366f1"
                 fontFamily="system-ui, -apple-system, sans-serif">{label}</text>
             );
           })}
@@ -6187,7 +6191,7 @@ export function VennDiagram({
       {/* Supplementary text lives BELOW the figure as HTML, never inside the
           SVG — AngleDiagram's totalLabel convention. */}
       {showTotal && total > 0 && (
-        <p className="text-center text-sm font-bold text-[#7C3AED]">
+        <p className="text-center text-sm font-bold text-[#6366f1]">
           {total} altogether
         </p>
       )}
@@ -6267,9 +6271,9 @@ export function NetDiagram({
   const unitsW = maxX - minX, unitsH = maxY - minY;
 
   const vw = 400, vh = 340;
-  // Generous padding so dimension labels sit OUTSIDE the net with room —
-  // the AngleDiagram convention.
-  const pad = showDims && cuboid ? 54 : 34;
+  // 70 matches RectangleDiagram's padL — the room a dimension line plus its
+  // rotated label actually needs outside the figure.
+  const pad = showDims && cuboid ? 70 : 34;
   const scale = Math.min((vw - 2 * pad) / unitsW, (vh - 2 * pad) / unitsH);
   const netW = unitsW * scale, netH = unitsH * scale;
   const ox = (vw - netW) / 2 - minX * scale;
@@ -6325,14 +6329,14 @@ export function NetDiagram({
                an accent instead of a second fill colour. */}
         {faces.map((f, i) => (
           <rect key={i} x={px(f.x)} y={py(f.y)} width={f.w * scale} height={f.h * scale}
-            fill={f.shaded ? '#FDCB6E30' : '#7C3AED30'} />
+            fill={f.shaded ? '#93c5fd' : '#bfdbfe'} />
         ))}
 
         {/* 2. Fold lines — dashed accent. This is what makes it read as a net. */}
         <g className="folds">
           {folds.map((e, i) => (
             <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
-              stroke="#7C3AED" strokeWidth={2} strokeDasharray="5,4" strokeLinecap="round" />
+              stroke="#6366f1" strokeWidth={1.5} strokeDasharray="5,4" strokeLinecap="round" />
           ))}
         </g>
 
@@ -6340,7 +6344,7 @@ export function NetDiagram({
         <g className="net-outline">
           {outline.map((e, i) => (
             <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
-              stroke="#1e293b" strokeWidth={3} strokeLinecap="round" />
+              stroke="#3b82f6" strokeWidth={2.5} strokeLinecap="round" />
           ))}
         </g>
 
@@ -6353,7 +6357,7 @@ export function NetDiagram({
               <text key={i} x={px(f.x + f.w / 2)} y={py(f.y + f.h / 2)}
                 textAnchor="middle" dominantBaseline="middle"
                 fontSize={14} fontWeight="bold"
-                fill={hidden ? '#dc2626' : '#7C3AED'}
+                fill={hidden ? '#dc2626' : '#1e40af'}
                 fontFamily="system-ui, -apple-system, sans-serif">
                 {hidden ? '?' : f.label}
               </text>
@@ -6369,22 +6373,53 @@ export function NetDiagram({
           const front = faces[2], top = faces[0], left = faces[1];
           return (
             <g className="dims">
+              {/* Dimension lines with arrowheads at BOTH ends, 20 out from
+                  the figure with the label 22 beyond — the same treatment
+                  RectangleDiagram and CuboidDiagram use. The measurement
+                  reads as a measurement, not as floating text. */}
+
               {/* length, under the bottom face */}
-              <text x={px(faces[5].x + faces[5].w / 2)} y={py(maxY) + 24}
-                textAnchor="middle" fontSize={15} fontWeight={800} fill="#1e293b"
+              <line x1={px(faces[5].x)} y1={py(maxY) + 20} x2={px(faces[5].x + faces[5].w)} y2={py(maxY) + 20}
+                stroke="#6366f1" strokeWidth="2"
+                markerStart={`url(#${uid}-al)`} markerEnd={`url(#${uid}-ar)`} />
+              <text x={px(faces[5].x + faces[5].w / 2)} y={py(maxY) + 42}
+                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
                 fontFamily="system-ui, -apple-system, sans-serif">{L} {unit}</text>
-              {/* height, left of the left face */}
-              <text x={px(minX) - 12} y={py(left.y + left.h / 2)}
-                textAnchor="end" dominantBaseline="middle"
-                fontSize={15} fontWeight={800} fill="#1e293b"
-                fontFamily="system-ui, -apple-system, sans-serif">{H} {unit}</text>
-              {/* width/depth. This labels the top face's VERTICAL extent, so
-                  it must sit beside that edge — placed above and centred it
-                  reads as the face's width (the length), which is wrong. */}
-              <text x={px(top.x + top.w) + 12} y={py(top.y + top.h / 2)}
-                textAnchor="start" dominantBaseline="middle"
-                fontSize={15} fontWeight={800} fill="#1e293b"
-                fontFamily="system-ui, -apple-system, sans-serif">{W} {unit}</text>
+
+              {/* height, left of the left face — label rotated to follow the edge */}
+              <line x1={px(minX) - 20} y1={py(left.y)} x2={px(minX) - 20} y2={py(left.y + left.h)}
+                stroke="#6366f1" strokeWidth="2"
+                markerStart={`url(#${uid}-au)`} markerEnd={`url(#${uid}-ad)`} />
+              <text x={px(minX) - 38} y={py(left.y + left.h / 2)}
+                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif"
+                transform={`rotate(-90, ${px(minX) - 38}, ${py(left.y + left.h / 2)})`}>{H} {unit}</text>
+
+              {/* width/depth. This measures the top face's VERTICAL extent, so
+                  the line runs down that edge — placed above and centred it
+                  would read as the face's width (the length), which is wrong. */}
+              <line x1={px(top.x + top.w) + 20} y1={py(top.y)} x2={px(top.x + top.w) + 20} y2={py(top.y + top.h)}
+                stroke="#6366f1" strokeWidth="2"
+                markerStart={`url(#${uid}-au)`} markerEnd={`url(#${uid}-ad)`} />
+              <text x={px(top.x + top.w) + 38} y={py(top.y + top.h / 2)}
+                textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif"
+                transform={`rotate(-90, ${px(top.x + top.w) + 38}, ${py(top.y + top.h / 2)})`}>{W} {unit}</text>
+
+              <defs>
+                <marker id={`${uid}-ar`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
+                </marker>
+                <marker id={`${uid}-al`} markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+                  <polygon points="8 0, 0 3, 8 6" fill="#6366f1" />
+                </marker>
+                <marker id={`${uid}-ad`} markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto">
+                  <polygon points="0 0, 3 8, 6 0" fill="#6366f1" />
+                </marker>
+                <marker id={`${uid}-au`} markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto">
+                  <polygon points="0 8, 3 0, 6 8" fill="#6366f1" />
+                </marker>
+              </defs>
             </g>
           );
         })()}
